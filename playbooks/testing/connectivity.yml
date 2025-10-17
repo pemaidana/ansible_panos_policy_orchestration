@@ -8,7 +8,7 @@
 #   export PAN_PASSWORD="your_device_password"
 #   ansible-playbook -i inventory.yml playbooks/testing/connectivity.yml
 
-- hosts: lab
+- hosts: lab-panorama01
   gather_facts: false
   connection: local
 
