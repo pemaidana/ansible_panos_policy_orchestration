@@ -7,7 +7,7 @@
     source_address_group: PRESET_JUMPHOST_INBOUND_SOURCE # In this case, the policy preset is an address_group type
     destination_address_group: PRESET_JUMPHOST_INBOUND_DESTINATION # In this case, the policy preset is an address_group type
     application_group: PRESET_JUMPHOST_APPS # If an application is passed, we should also include it in the policy.
-    device_group: Lab # Finally, we set the device group!
+    device_group: GCLOU-LAB-AUTOSCALE # Finally, we set the device group!
   when:
     - source_ip is defined
     - destination_ip is defined
