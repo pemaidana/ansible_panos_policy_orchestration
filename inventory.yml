@@ -14,7 +14,7 @@ all:
     lab:
       hosts:
         lab-panorama01:
-          ansible_host: < YOUR PANORAMA HOSTNAME OR IP HERE >
+          ansible_host: 34.4.33.62
           # Password should be provided via PAN_PASSWORD environment variable
           # Example: export PAN_PASSWORD="admin_password"
       vars:
@@ -22,7 +22,7 @@ all:
         ansible_connection: local
         ansible_python_interpreter: "{{ ansible_playbook_python }}"
         # These variables are only used when creating COMPLETELY NEW policies
-        default_new_policy_device_group: Lab
+        default_new_policy_device_group: GCLOU-LAB-AUTOSCALE
         default_new_policy_rulebase: post-rulebase
         default_new_policy_tag: AUTOMATED
         default_rule_location: bottom
