@@ -19,8 +19,8 @@
       paloaltonetworks.panos.panos_op:
         provider:
           ip_address: "{{ ansible_host }}"
-          username: "{{ lookup('env', 'PAN_USERNAME') }}"
-          password: "{{ lookup('env', 'PAN_PASSWORD') }}"
+          username: "{{ lookup('env', 'ANSIBLE_NET_USERNAME') }}"
+          password: "{{ lookup('env', 'ANSIBLE_NET_PASSWORD') }}"
         cmd: "show system info"
       register: system_info
       failed_when: false
